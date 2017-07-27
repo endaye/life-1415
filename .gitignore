@@ -60,3 +60,6 @@ typings/
 # JetBrain
 .idea/
 
+#template file
+.zip
+

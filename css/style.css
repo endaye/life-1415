@@ -1074,7 +1074,7 @@ section[data-section="menu"] {
 
 @media screen and (max-width: 992px) {
     .probootstrap-cell .image {
-        height: 200px;
+        height: 200px !important;
     }
 }
 
@@ -1121,39 +1121,27 @@ section[data-section="menu"] {
     }
 }
 
-.probootstrap-cell.reverse .image {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    min-height: 100%;
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 993px) {
     .probootstrap-cell.reverse .image {
-        position: relative;
-        width: 100%;
+        position: absolute;
+        right: 0;
+        width: 50%;
+        min-height: 100%;
     }
-}
-
-.probootstrap-cell.reverse .text:before {
-    z-index: 22;
-    left: 100%;
-    top: 15%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(255, 225, 255, 0);
-    border-left-color: #ffffff;
-    border-width: 12px;
-    margin-top: -12px;
-}
-
-@media screen and (max-width: 768px) {
     .probootstrap-cell.reverse .text:before {
-        display: none;
+        z-index: 22;
+        left: 100%;
+        top: 15%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 225, 255, 0);
+        border-left-color: #ffffff;
+        border-width: 12px;
+        margin-top: -12px;
     }
 }
 
